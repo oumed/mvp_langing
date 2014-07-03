@@ -1,0 +1,15 @@
+{% extends 'todo/base.html' %}
+
+{% block title %}Todo List{% endblock %}
+
+{% block content %}
+    <table>
+        <thead><tr><th>Title</th><th>Action</th></tr></thead>
+        <tbody>
+        {% for todo in todo_list %}
+            <tr><td>{% if perms.todo.view_todo %}<a href="{{todo.get_absolute_url}}">{{todo}}</a>{% else %}{{todo}}{% endif %}</td>
+                <td>{% if perms.todo.change_todo %}<a href="{% url 'todo_update' todo.pk %}">Update</a>{% endif %} | {% if perms.todo.delete_todo %}<a href="{% url 'todo_delete' todo.pk %}">Delete</a>{% endif %}</td></tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

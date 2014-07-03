@@ -1,0 +1,95 @@
+<div class="container">
+    <div id="wrapper">
+        <div class="proper-content">
+
+
+    <div class="row">
+
+            <div class="span4 align-right">
+                <img style="margin:0;padding:0;" src="/static/img/dataview-logo-bw-med.png" alt="Logo" width="90" height="90">
+            </div>
+            <div class="span8">
+                <h1>Dataview</h1>
+
+                <h3>Welcome to Dataview from Datavalet.</h3>
+            </div>
+
+    </div>
+
+    <div class="row">
+        <div class="span3">&nbsp;</div>
+        <div class="span6">
+            <br>
+
+
+
+
+            <br>
+
+            <form class="form-horizontal" method="POST" action="">
+                <legend>Sign in with your Dataview account credentials.</legend>
+                <input type="hidden" name="csrfmiddlewaretoken" value="pZEJCjDlrYFa6JkayQwGh6MMoNV1ZtrJ">
+                <div class="control-group error">
+                    <label class="control-label" for="id_errors"></label>
+
+                    <div class="controls">
+                        <span class="help-inline" id="id_errors"></span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="id_username"><b>Nom d'utilisateur</b></label>
+
+                    <div class="controls">
+                        <input class="field_username" id="id_username" maxlength="255" name="username" placeholder="Username" size="15" type="text"><span class="help-inline"></span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="id_password"><b>Mot de passe</b></label>
+
+                    <div class="controls">
+                        <input class="field_password" id="id_password" maxlength="128" name="password" placeholder="Password" size="15" type="password"><span class="help-inline"></span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-primary">Log In</button>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <a href="/password/reset/">Forgot your password?</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="span3">&nbsp;</div>
+    </div>
+
+            <form action="/i18n/setlang/" method="post" id="langform"><input type="hidden" name="csrfmiddlewaretoken" value="pZEJCjDlrYFa6JkayQwGh6MMoNV1ZtrJ">
+                <input type="hidden" name="language" id="language">
+            </form>
+        </div>
+        <div class="push"></div>
+    </div>
+
+        <div class="footer-wrapper">
+            <div class="container">
+                <p class="pull-right">
+                    Copyright 2014 Datavalet. All rights reserved. Datavalet is a registered trademark in Canada.
+                </p>
+            </div>
+        </div>
+
+</div>
+
+
+<div id="debug_modal" class="modal hide fade">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3>500 Error</h3>
+        </div>
+        <div class="modal-body"></div>
+        <div class="modal-footer">
+            <a href="#" class="btn" data-dismiss="modal">Close</a>
+        </div>
+    </div>

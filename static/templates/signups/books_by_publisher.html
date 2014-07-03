@@ -1,0 +1,8 @@
+<h2>Book by publisher</h2>
+<ul>
+    {% for book in book_list %}
+        <li>{{ book.title }}</li>
+    {% endfor %}
+</ul>
+
+Publisher :{{ publisher.name }}

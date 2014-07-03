@@ -1,0 +1,15 @@
+
+<p>{{ publisher.name  }} </p>
+<p>{{ publisher.address  }} </p>
+<p>{{ publisher.city  }} </p>
+<p>{{ publisher.state_province  }} </p>
+<p>{{ publisher.country  }} </p>
+<p>{{ publisher.website  }} </p>
+
+
+<h2>Book</h2>
+<ul>
+    {% for book in book_list %}
+        <li>{{ book.title }}</li>
+    {% endfor %}
+</ul>

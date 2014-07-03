@@ -1,0 +1,67 @@
+<!doctype html>
+<html ng-app lang="fr">
+<head>
+<meta Charest="UTF-8">
+<title>Test AngularJS</title>
+
+</head>
+<body >
+
+    <div  ng-controller="monControl">
+         {% verbatim %}
+        <h1>Fiche d'identité n°{{infoPerso.id}}</h1>
+        <p>Nom : {{infoPerso.nom}}</p>
+        <p>Prénom : {{infoPerso.prenom}}</p>
+        <p>Date de Naissance : {{infoPerso.dateNaissance}}</p>
+        {% endverbatim %}
+    </div>
+
+    <div  ng-controller="monControl2">
+        {% verbatim %}
+            <h1>Voici ma liste de fruits</h1>
+            <ul>
+                <li ng-repeat="fruit in mesFruits">{{fruit}}</li>
+            </ul>
+        {% endverbatim %}
+    </div>
+
+    <div  ng-controller="monControl3">
+         {% verbatim %}
+
+        <li ng-repeat="client in mesClients">
+
+            <h1>Fiche d'identité n°{{client.id}}</h1>
+            <p>Nom : {{client.nom}}</p>
+            <p>Prénom : {{client.prenom}}</p>
+            <p>Date de Naissance : {{client.dateNaissance}}</p>
+
+        </li>
+
+        {% endverbatim %}
+    </div>
+
+
+    <div  ng-controller="monControleur">
+        {% verbatim %}
+        <h1 id="monTitre">Séries en série</h1>
+        <div class="row" id="mesSeries" ng-repeat="serie in tabSerie">
+            <div class="offset5 span2"><img ng-src="{{serie.urlImage}}"/></div>
+            <div class="span5">
+
+            <h2>{{serie.titre}}</h2>
+            <p>Titre original : {{serie.titreOr}}</p>
+            <p>Créateur(s) : {{serie.createur}}</p>
+            <p>Etat : {{serie.etat}}
+            </div>
+        </div>
+        {% endverbatim %}
+    </div>
+
+
+    <script src="/static/js/angular.min.js"></script>
+    <script src="/static/js/ex1.js"></script>
+
+</body>
+</html>
+
+

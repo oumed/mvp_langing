@@ -1,0 +1,15 @@
+.jumbotron {
+    background-color: rgb(213, 145, 40) !important;
+}
+
+.btn-primary {
+    background-color: rgb(255, 0, 0);
+}
+
+
+.messages {
+    color: mediumvioletred;
+    background-color: thistle;
+    text-align: center;
+
+}
